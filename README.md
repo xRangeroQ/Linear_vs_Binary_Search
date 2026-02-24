@@ -1,29 +1,28 @@
-# Binary Search Implementation
+# Linear Search vs. Binary Search Benchmark
 
-A high-performance and clean implementation of the **Binary Search** algorithm. This repository focuses on providing a well-structured, easy-to-understand code for one of the most fundamental algorithms in computer science.
+This repository contains a C++ performance comparison between **Linear Search** and **Binary Search** algorithms. It demonstrates the efficiency gap by searching for a specific target within a range of 1 billion elements and measuring the execution time.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Complexity](https://img.shields.io/badge/Complexity-O(log%20n)-blue.svg)](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+[![Language](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)](https://en.cppreference.com/)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://microsoft.com)
 
-## 📌 Overview
-Binary Search is a search algorithm that finds the position of a target value within a **sorted array**. It compares the target value to the middle element of the array and eliminates half of the search space in each step.
+## 📊 Comparison Overview
 
-### Complexity Analysis
-- **Time Complexity:** $O(\log n)$
-- **Space Complexity:** $O(1)$ (Iterative)
-- **Requirement:** The input array **must be sorted**.
+The program targets the number `935,971,927` within a range of `0` to `1,000,000,000`.
 
-## 🚀 Features
-- **Optimized:** Iterative approach for memory efficiency.
-- **Readable:** Clean code structure with logical comments.
-- **Scalable:** Handles large datasets efficiently.
+| Algorithm | Complexity | Measurement Unit | Efficiency |
+| :--- | :--- | :--- | :--- |
+| **Linear Search** | $O(n)$ | Milliseconds (ms) | Iterates one by one. |
+| **Binary Search** | $O(\log n)$ | Nanosanyiyes (ns) | Splits the range in half. |
 
-## 🛠️ Installation & Usage
-To clone and run this project locally:
 
-```bash
-# Clone the repository
-git clone [https://github.com/xRangeroQ/Binary_Search.git](https://github.com/xRangeroQ/Binary_Search.git)
 
-# Navigate to the directory
-cd Binary_Search
+## 🛠️ Technical Details
+- **Time Measurement:** Uses `std::chrono::high_resolution_clock` for high-precision timing.
+- **Console Optimization:** Uses `SetConsoleOutputCP(65001)` for UTF-8 support and ANSI escape codes for colored terminal output.
+- **Environment:** Designed specifically for Windows environments (due to `windows.h`).
+
+## 🚀 How to Run
+1. Ensure you have a C++ compiler (like MinGW or MSVC) installed.
+2. Clone the repository:
+   ```bash
+   git clone [https://github.com/xRangeroQ/Binary_Search.git](https://github.com/xRangeroQ/Binary_Search.git)
