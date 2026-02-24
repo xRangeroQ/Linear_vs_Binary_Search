@@ -12,7 +12,7 @@ The program targets the number `935,971,927` within a range of `0` to `1,000,000
 | Algorithm | Complexity | Measurement Unit | Efficiency |
 | :--- | :--- | :--- | :--- |
 | **Linear Search** | $O(n)$ | Milliseconds (ms) | Iterates one by one. |
-| **Binary Search** | $O(\log n)$ | Nanosanyiyes (ns) | Splits the range in half. |
+| **Binary Search** | $O(\log n)$ | Nanoseconds (ns) | Splits the range in half. |
 
 
 
