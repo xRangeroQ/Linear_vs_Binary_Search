@@ -20,9 +20,3 @@ The program targets the number `935,971,927` within a range of `0` to `1,000,000
 - **Time Measurement:** Uses `std::chrono::high_resolution_clock` for high-precision timing.
 - **Console Optimization:** Uses `SetConsoleOutputCP(65001)` for UTF-8 support and ANSI escape codes for colored terminal output.
 - **Environment:** Designed specifically for Windows environments (due to `windows.h`).
-
-## 🚀 How to Run
-1. Ensure you have a C++ compiler (like MinGW or MSVC) installed.
-2. Clone the repository:
-   ```bash
-   git clone [https://github.com/xRangeroQ/Binary_Search.git](https://github.com/xRangeroQ/Binary_Search.git)
